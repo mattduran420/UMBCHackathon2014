@@ -1,0 +1,27 @@
+<header class="navbar" ng-controller="header" id="header-navbar">
+		<div class="container">
+			<a href="#/" id="logo" class="navbar-brand">
+				AGILE ASSAULT
+			</a>
+			<div class="clearfix">
+			<button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="fa fa-bars"></span>
+			</button>
+			<div class="nav-no-collapse pull-right" id="header-nav">
+				<ul class="nav navbar-nav pull-right">
+					<li class="profile-dropdown hidden-xxs">
+					<a href="">
+						Welcome {{username}}
+					</a>
+					</li>
+					<li class="hidden-xxs">
+						<a ng-click="logout();" class="btn">
+							<i class="fa fa-power-off"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
